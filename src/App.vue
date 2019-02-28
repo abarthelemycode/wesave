@@ -25,12 +25,12 @@ export default {
     src: url("~@/assets/fonts/Lato-Regular.ttf") format("truetype")
 
     #app
+      background-color: $darkgrey
       font-family: 'Lato'
       -webkit-font-smoothing: antialiased
       -moz-osx-font-smoothing: grayscale
       text-align: center
       margin: auto
-      background-color: $darkgrey
       color: $white
 
 </style>

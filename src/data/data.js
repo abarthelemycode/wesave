@@ -3,7 +3,7 @@
  * Ce fichier peut être modifié.
  */
 
-var PLAYLISTS = [
+export const PLAYLISTS = [
   {
     name: 'Playlist 1',
     size: 15
@@ -26,7 +26,7 @@ var PLAYLISTS = [
   }
 ];
 
-var ALBUMS = [
+export const ALBUMS = [
   {
     name: 'Album 1'
   },

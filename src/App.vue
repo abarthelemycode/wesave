@@ -1,15 +1,19 @@
 <template>
   <div id="app">
+    <AppHeader />
     <AppMenu />
     <router-view></router-view>
   </div>
 </template>
 
 <script>
+import AppHeader from './components/AppHeader.vue'
 import AppMenu from './components/AppMenu.vue'
+
 export default {
   name: 'app',
   components: {
+    AppHeader,
     AppMenu
   }
 }

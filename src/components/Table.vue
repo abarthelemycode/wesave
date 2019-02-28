@@ -4,8 +4,8 @@
       <thead>
         <tr class="title">
           <th class="icon"></th>
-          <th class="name" v-if="containsKey('name')" v-on:click="sortTable('name')">Titre</th>
-          <th class="size" v-if="containsKey('size')" v-on:click="sortTable('size')">Taille</th>
+          <th class="name titlesort" v-if="containsKey('name')" v-on:click="sortTable('name')">Titre</th>
+          <th class="size titlesort" v-if="containsKey('size')" v-on:click="sortTable('size')">Taille</th>
         </tr>
       </thead>
       <tbody>
@@ -29,14 +29,18 @@ export default {
   props: {
     dataTable: {
       type:Array,
-      default: []
+      default: () => {
+        return []
+      }
     },
   },
   data() {
     return {
       dataDisplayed: {
         type:Array,
-        default: []
+        default: () => {
+          return []
+        }
       },
     }
   },
@@ -81,6 +85,9 @@ export default {
   .title
     cursor: pointer
     background-color: $darkYellow
+
+  .titlesort:hover
+    color: $darkgrey
 
   .name
     text-align: left

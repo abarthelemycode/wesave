@@ -18,16 +18,16 @@ export default {
   ul
     display: block
     padding: 0
-    margin: 0
+    margin: 0.5em
 
   .menu-button
     display: inline-block
     font-weight: bold
     text-transform: uppercase
     width: 25em
-    height: 3em
-    margin: 1em
-    line-height: 3em
+    height: 4em
+    margin: 0.5em
+    line-height: 4em
     background-color: $black
     a
       color: $white

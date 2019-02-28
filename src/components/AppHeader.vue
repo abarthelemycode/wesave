@@ -1,5 +1,6 @@
 <template>
   <header>
+    <div class="back-img"></div>
     <h1>{{ $route.meta.title }}</h1>
   </header>
 </template>
@@ -11,17 +12,22 @@ export default {
 
 <style lang="sass" scoped>
   header
-    display: inline-block
+    position: relative
     margin: 0
-    width: 100%
-    height: 15em
     text-align: center
-    box-shadow: 0 0 0 200px rgba(38,38,38,0.5) inset
-    background-image: url('~@/assets/img/header.jpeg')
-    background-position: center center
-    background-repeat: no-repeat
-    background-size: cover
+    .back-img
+      width: 100%
+      height: 12em
+      opacity: 0.5
+      background-image: url('~@/assets/img/header.jpeg')
+      background-position: center center
+      background-repeat: no-repeat
+      background-size: cover
     h1
+      position: absolute
+      top: 0px
+      left: 0px
+      width: 100%
       line-height: 3em
       font-size: 3em
 </style>

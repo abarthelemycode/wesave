@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <HelloWorld />
+    <AppMenu />
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
-
-
+import AppMenu from './components/AppMenu.vue'
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    AppMenu
   }
 }
 </script>
@@ -21,10 +20,13 @@ export default {
     font-family: "Lato"
     src: url("~@/assets/fonts/Lato-Regular.ttf") format("truetype")
 
-  #app
-    font-family: 'Lato'
-    -webkit-font-smoothing: antialiased
-    -moz-osx-font-smoothing: grayscale
-    text-align: center
-    margin: auto
+    #app
+      font-family: 'Lato'
+      -webkit-font-smoothing: antialiased
+      -moz-osx-font-smoothing: grayscale
+      text-align: center
+      margin: auto
+      background-color: $darkgrey
+      color: $white
+
 </style>
